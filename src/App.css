@@ -1,38 +1,165 @@
-.App {
-  text-align: center;
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  padding-top: 76px; /* For fixed navbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Theme Colors */
+:root {
+  --bs-primary: #2563eb;
+  --bs-primary-rgb: 37, 99, 235;
+  --bs-secondary: #10b981;
+  --bs-secondary-rgb: 16, 185, 129;
+  --bs-info: #0ea5e9;
+  --bs-info-rgb: 14, 165, 233;
+  --bs-success: #059669;
+  --bs-success-rgb: 5, 150, 105;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Dark Mode Styles */
+[data-bs-theme="dark"] {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e9ecef;
+  --bs-secondary-color: #adb5bd;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.1),
+    rgba(16, 185, 129, 0.1)
+  );
+  min-height: calc(100vh - 76px);
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.hero-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.social-links a {
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--bs-primary);
+  transform: translateY(-3px);
+}
+
+/* Project Cards */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.1),
+    transparent
+  );
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  margin-bottom: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 1rem;
+  right: -1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  border: 2px solid var(--bs-primary);
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.timeline-marker-left {
+  left: -1.5rem;
+  right: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.date-badge {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.65rem;
+}
+
+/* Responsive Timeline */
+@media (max-width: 991.98px) {
+  .timeline::before {
+    left: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .timeline-marker,
+  .timeline-marker-left {
+    left: 0;
+    right: auto;
   }
+}
+
+/* Dark Mode Adjustments */
+[data-bs-theme="dark"] .bg-light {
+  background-color: #1e1e1e;
+}
+
+[data-bs-theme="dark"] .timeline::before {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+}
+
+[data-bs-theme="dark"] .timeline-marker {
+  background-color: #343a40;
+  border-color: var(--bs-primary);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Accessibility Focus Styles */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--bs-primary);
+  outline-offset: 2px;
 }
