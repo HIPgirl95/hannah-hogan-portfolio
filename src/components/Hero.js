@@ -15,7 +15,7 @@ function Hero() {
           <Col lg={6} className="mb-5 mb-lg-0">
             <div className="mb-4">
               <h1 className="display-4 fw-bold mb-3">
-                Hi, I'm <span className="text-primary">Alex</span>
+                Hi, I'm <span className="text-primary">Hannah</span>
                 <br />
                 Full Stack Developer
               </h1>
@@ -33,7 +33,7 @@ function Hero() {
                 </Button>
                 <Button
                   variant="outline-primary"
-                  href="/resume.pdf"
+                  href="/Hannah-Hogan-Resume.pdf"
                   target="_blank"
                   className="d-flex align-items-center"
                 >
@@ -42,7 +42,7 @@ function Hero() {
               </div>
               <div className="d-flex gap-3 social-links">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/HIPgirl95/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary"
@@ -51,7 +51,7 @@ function Hero() {
                   <span className="visually-hidden">GitHub</span>
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/hannah-i-hogan/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary"
@@ -59,7 +59,10 @@ function Hero() {
                   <BsLinkedin size={24} />
                   <span className="visually-hidden">LinkedIn</span>
                 </a>
-                <a href="mailto:hello@example.com" className="text-secondary">
+                <a
+                  href="mailto:hannah@internetworkflow.com"
+                  className="text-secondary"
+                >
                   <BsEnvelope size={24} />
                   <span className="visually-hidden">Email</span>
                 </a>
