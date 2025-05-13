@@ -17,15 +17,16 @@ function About() {
             className="lead text-secondary mx-auto"
             style={{ maxWidth: "700px" }}
           >
-            A passionate full stack developer with a focus on creating
-            exceptional user experiences.
+            A full stack developer with a strong foundation in math and science
+            education, dedicated to crafting seamless, meaningful user
+            experiences.
           </p>
         </div>
 
         <Row className="align-items-center">
           <Col lg={6} className="mb-4 mb-lg-0">
             <img
-              src="https://via.placeholder.com/600x600"
+              src="/images/C.jpg"
               alt="About me"
               className="img-fluid rounded shadow-lg"
             />
@@ -33,27 +34,29 @@ function About() {
           <Col lg={6}>
             <div className="ps-lg-4">
               <p className="mb-4">
-                I'm a full stack developer with a passion for building
-                beautiful, functional, and user-friendly web applications. With
-                expertise in both frontend and backend technologies, I create
-                seamless experiences that solve real-world problems.
+                I am a former teacher turned Full-Stack Developer. After several
+                years teaching a variety of subjects and age groups, I decided
+                to pivot my career to pursue my passion for math, logic, and
+                problem-solving. Teaching has given me invaluable skills in
+                communication, adaptability, and perseverance, and I bring these
+                qualities to my new journey in tech.
               </p>
               <p className="mb-4">
-                My journey in web development started 5 years ago, and I've been
-                continuously learning and improving my skills ever since. I
-                enjoy working with modern frameworks and technologies, and I'm
-                always excited to learn something new.
+                I’m excited to dive headfirst into a new industry and
+                collaborate on projects that both challenge and inspire me. I’m
+                looking for a role where I can continue to grow as a developer
+                while contributing to meaningful work. If you’re looking for a
+                determined, adaptable, and eager team member with a unique
+                perspective, let’s connect!
               </p>
               <Row>
                 <Col md={6}>
                   <h3 className="h5 fw-bold">Education</h3>
-                  <p className="text-secondary">
-                    B.S. Computer Science, University of Technology
-                  </p>
+                  <p className="text-secondary">B.S. Physics Education</p>
                 </Col>
                 <Col md={6}>
                   <h3 className="h5 fw-bold">Location</h3>
-                  <p className="text-secondary">San Francisco, CA</p>
+                  <p className="text-secondary">Atlanta, GA</p>
                 </Col>
               </Row>
             </div>
