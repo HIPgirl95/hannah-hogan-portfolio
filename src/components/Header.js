@@ -17,8 +17,8 @@ function Header({ theme, toggleTheme }) {
       expanded={expanded}
     >
       <Container>
-        <Navbar.Brand href="#home" className="fw-bold fs-4">
-          <span className="text-primary">Dev</span>Portfolio
+        <Navbar.Brand href="#home" className="logo fw-bold fs-4">
+          <span className="text-primary">Hannah</span>Hogan
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"

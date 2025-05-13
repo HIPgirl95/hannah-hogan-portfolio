@@ -40,6 +40,12 @@ section {
   align-items: center;
 }
 
+.logo {
+  font-size: xx-large;
+  font-family: "Megrim", serif;
+  font-weight: 700;
+}
+
 .hero-image-container {
   position: relative;
   overflow: hidden;

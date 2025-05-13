@@ -7,19 +7,15 @@ function Footer() {
       <Container>
         <Row className="align-items-center">
           <Col md={6} className="text-center text-md-start mb-3 mb-md-0">
-            <div className="fw-bold fs-4 mb-1">
-              <span className="text-primary">Dev</span>Portfolio
+            <div className="fw-bold fs-4 mb-1 logo">
+              <span className="text-primary">Hannah</span>Hogan
             </div>
-            <p className="text-secondary small mb-0">
-              &copy; {new Date().getFullYear()} Alex Developer. All rights
-              reserved.
-            </p>
           </Col>
           <Col md={6}>
             <ul className="list-inline text-center text-md-end mb-0">
               <li className="list-inline-item me-3">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/HIPgirl95/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary"
@@ -30,7 +26,7 @@ function Footer() {
               </li>
               <li className="list-inline-item me-3">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/hannah-i-hogan/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary"
@@ -40,7 +36,10 @@ function Footer() {
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="mailto:hello@example.com" className="text-secondary">
+                <a
+                  href="mailto:hannah@internetworkflow.com"
+                  className="text-secondary"
+                >
                   <BsEnvelope size={20} />
                   <span className="visually-hidden">Email</span>
                 </a>

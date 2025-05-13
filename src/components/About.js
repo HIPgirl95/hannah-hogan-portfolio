@@ -52,11 +52,15 @@ function About() {
               <Row>
                 <Col md={6}>
                   <h3 className="h5 fw-bold">Education</h3>
-                  <p className="text-secondary">B.S. Physics Education</p>
+                  <p className="text-secondary">
+                    Bachelor of Science | Physics Education
+                  </p>
                 </Col>
                 <Col md={6}>
                   <h3 className="h5 fw-bold">Location</h3>
-                  <p className="text-secondary">Atlanta, GA</p>
+                  <p className="text-secondary">
+                    Georgia State University | Atlanta, GA
+                  </p>
                 </Col>
               </Row>
             </div>
