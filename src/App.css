@@ -139,7 +139,7 @@ section {
 
 /* Dark Mode Adjustments */
 [data-bs-theme="dark"] .bg-light {
-  background-color: #1e1e1e;
+  background-color: #1e1e1e !important;
 }
 
 [data-bs-theme="dark"] .timeline::before {
