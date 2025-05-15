@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Container, Row, Col, Form, Button, Card } from "react-bootstrap";
 import {
   BsEnvelope,
@@ -5,8 +6,31 @@ import {
   BsGithub,
   BsCheckCircleFill,
 } from "react-icons/bs";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+
+const ServiceID = process.env.REACT_APP_SERVICE_ID;
+const TemplateID = process.env.REACT_APP_TEMPLATE_ID;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(ServiceID, TemplateID, form.current, publicKey)
+      .then(() => {
+        toast.success("Message sent!");
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.error("FAILED...", error);
+        toast.error("Something went wrong.");
+      });
+  };
+
   return (
     <section id="contact" className="contact-section py-5 bg-light">
       <Container className="py-5">
@@ -32,31 +56,48 @@ function Contact() {
                 </Card.Subtitle>
               </Card.Header>
               <Card.Body>
-                <Form>
+                <Form ref={form} onSubmit={sendEmail}>
                   <Row>
                     <Col md={6}>
                       <Form.Group className="mb-3">
                         <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" placeholder="Your name" />
+                        <Form.Control
+                          type="text"
+                          name="name"
+                          placeholder="Your name"
+                          required
+                        />
                       </Form.Group>
                     </Col>
                     <Col md={6}>
                       <Form.Group className="mb-3">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Your email" />
+                        <Form.Control
+                          type="email"
+                          name="email"
+                          placeholder="Your email"
+                          required
+                        />
                       </Form.Group>
                     </Col>
                   </Row>
                   <Form.Group className="mb-3">
                     <Form.Label>Subject</Form.Label>
-                    <Form.Control type="text" placeholder="Project inquiry" />
+                    <Form.Control
+                      type="text"
+                      name="subject"
+                      placeholder="Project inquiry"
+                      required
+                    />
                   </Form.Group>
                   <Form.Group className="mb-3">
                     <Form.Label>Message</Form.Label>
                     <Form.Control
                       as="textarea"
+                      name="message"
                       rows={5}
                       placeholder="Your message"
+                      required
                     />
                   </Form.Group>
                   <Button variant="primary" type="submit" className="w-100">
@@ -80,7 +121,9 @@ function Contact() {
                     </div>
                     <div>
                       <h5 className="h6 fw-bold">Email</h5>
-                      <p className="text-secondary mb-0">hello@example.com</p>
+                      <p className="text-secondary mb-0">
+                        hannah@internetworkflow.com
+                      </p>
                     </div>
                   </div>
                   <div className="d-flex mb-4">
@@ -89,9 +132,14 @@ function Contact() {
                     </div>
                     <div>
                       <h5 className="h6 fw-bold">LinkedIn</h5>
-                      <p className="text-secondary mb-0">
-                        linkedin.com/in/yourprofile
-                      </p>
+                      <a
+                        href="https://www.linkedin.com/in/hannah-i-hogan/"
+                        className="text-secondary mb-0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        www.linkedin.com/in/hannah-i-hogan/
+                      </a>
                     </div>
                   </div>
                   <div className="d-flex">
@@ -100,9 +148,14 @@ function Contact() {
                     </div>
                     <div>
                       <h5 className="h6 fw-bold">GitHub</h5>
-                      <p className="text-secondary mb-0">
-                        github.com/yourusername
-                      </p>
+                      <a
+                        href="https://github.com/HIPgirl95"
+                        className="text-secondary mb-0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        github.com/HIPgirl95
+                      </a>
                     </div>
                   </div>
                 </Card.Body>
@@ -134,6 +187,7 @@ function Contact() {
           </Col>
         </Row>
       </Container>
+      <ToastContainer />
     </section>
   );
 }
