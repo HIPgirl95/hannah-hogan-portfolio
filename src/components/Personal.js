@@ -25,24 +25,30 @@ function Personal() {
               </Card.Header>
               <Card.Body>
                 <div className="mb-4">
-                  <h4 className="h6 fw-bold">Photography</h4>
+                  <h4 className="h6 fw-bold">Gaming</h4>
                   <p className="text-secondary">
-                    I'm an avid landscape photographer and enjoy capturing
-                    nature's beauty during my travels.
+                    I have a passion for gaming, with very few exceptions. I
+                    enjoy card and board games, as well as video games and
+                    tabletop RPGs. I love the strategy and creativity involved
+                    in these games, and I often play with friends and family.
                   </p>
                 </div>
                 <div className="mb-4">
-                  <h4 className="h6 fw-bold">Rock Climbing</h4>
+                  <h4 className="h6 fw-bold">Music</h4>
                   <p className="text-secondary">
-                    I've been rock climbing for 3 years and love the
-                    problem-solving aspect of bouldering.
+                    I have a deep appreciation for music and love to break down
+                    songs and discuss them in depth. While I don't play an
+                    instrument, I love to sing, and I have dabbled in a few
+                    different intruments.
                   </p>
                 </div>
                 <div>
                   <h4 className="h6 fw-bold">Reading</h4>
                   <p className="text-secondary">
-                    I enjoy science fiction and non-fiction books about
-                    technology and psychology.
+                    I have always loved reading, and I enjoy a wide variety of
+                    genres, including fantasy, science fiction, and non-fiction.
+                    I love getting lost in a good book and exploring new worlds
+                    and ideas.
                   </p>
                 </div>
               </Card.Body>
@@ -60,22 +66,27 @@ function Personal() {
                 <div className="mb-4">
                   <h4 className="h6 fw-bold">Continuous Learning</h4>
                   <p className="text-secondary">
-                    I believe in lifelong learning and constantly expanding my
-                    knowledge and skills.
+                    With my background in education, I believe in the importance
+                    of lifelong learning. I am always looking for opportunities
+                    to learn more and ask questions. I truly believe that there
+                    is no such thing as a stupid question.
                   </p>
                 </div>
                 <div className="mb-4">
-                  <h4 className="h6 fw-bold">Work-Life Balance</h4>
-                  <p className="text-secondary">
-                    I value maintaining a healthy balance between professional
-                    achievements and personal well-being.
-                  </p>
-                </div>
-                <div>
                   <h4 className="h6 fw-bold">Collaboration</h4>
                   <p className="text-secondary">
                     I believe the best results come from diverse teams working
-                    together with open communication.
+                    together with open communication. I am always looking for
+                    ways to improve my communication skills and learn how to
+                    better be a team player.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="h6 fw-bold">Dedication and Hardwork</h4>
+                  <p className="text-secondary">
+                    I take commitment seriously and always strive to give my
+                    best effort. I believe that hard work and dedication are key
+                    to the success of any project.
                   </p>
                 </div>
               </Card.Body>
@@ -91,24 +102,31 @@ function Personal() {
               </Card.Header>
               <Card.Body>
                 <div className="mb-4">
-                  <h4 className="h6 fw-bold">Traveled to 15 Countries</h4>
+                  <h4 className="h6 fw-bold">Learning Korean</h4>
                   <p className="text-secondary">
-                    I love experiencing different cultures and have visited 15
-                    countries across 4 continents.
+                    In high school, I fell in love with Korean culture through
+                    their music and dramas. I was able to take a few classes in
+                    college, and I am now self-studying. I love the challenge of
+                    learning a new language and the opportunity to connect with
+                    a different culture.
                   </p>
                 </div>
                 <div className="mb-4">
-                  <h4 className="h6 fw-bold">Amateur Chef</h4>
+                  <h4 className="h6 fw-bold">Homeschooled</h4>
                   <p className="text-secondary">
-                    I enjoy cooking international cuisines and hosting dinner
-                    parties for friends.
+                    I was homeschooled from kindergarten through high school.
+                    This experience taught me to be self-motivated and
+                    independent, setting my own goals and working towards them.
                   </p>
                 </div>
                 <div>
-                  <h4 className="h6 fw-bold">Former Band Member</h4>
+                  <h4 className="h6 fw-bold">Volunteering</h4>
                   <p className="text-secondary">
-                    I played bass guitar in a local indie rock band during
-                    college.
+                    I helped drill a freshwater well for a village in El
+                    Salvador. It was hot, messy, and one of the most rewarding
+                    things I’ve ever done. That experience showed me how
+                    meaningful problem-solving can be—especially when it makes a
+                    real difference in people’s lives.
                   </p>
                 </div>
               </Card.Body>
