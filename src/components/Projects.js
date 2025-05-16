@@ -39,7 +39,7 @@ function Projects() {
 
         <Row>
           {/* Project 1*/}
-          <Col lg={4} md={6} className="mb-4">
+          <Col lg={4} className="mb-4">
             <Card className="h-100 border-primary border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Pokedex App</Card.Title>
@@ -89,7 +89,7 @@ function Projects() {
           </Col>
 
           {/* Project 2 */}
-          <Col lg={4} md={6} className="mb-4">
+          <Col lg={4} className="mb-4">
             <Card className="h-100 border-success border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Movie API</Card.Title>
@@ -134,7 +134,7 @@ function Projects() {
           </Col>
 
           {/* Project 3 with case study */}
-          <Col lg={4} md={6} className="mb-4">
+          <Col lg={4} className="mb-4">
             <Card className="h-100 border-primary border-opacity-25 project-card">
               <div className="position-relative">
                 <Badge
@@ -200,7 +200,7 @@ function Projects() {
         </Row>
         <Row>
           {/* Project 4 */}
-          <Col lg={4} md={6} className="mb-4">
+          <Col lg={4} className="mb-4">
             <Card className="h-100 border-success border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Meet App</Card.Title>
@@ -252,7 +252,7 @@ function Projects() {
           </Col>
 
           {/* Project 5 */}
-          <Col lg={4} md={6} className="mb-4">
+          <Col lg={4} className="mb-4">
             <Card className="h-100 border-info border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Mobile Chat App</Card.Title>
@@ -294,7 +294,7 @@ function Projects() {
           </Col>
 
           {/* Project 6 */}
-          <Col lg={4} md={6} className="mb-4">
+          <Col lg={4} className="mb-4">
             <Card className="h-100 border-info border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Angular myFlix Client</Card.Title>
