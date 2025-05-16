@@ -345,7 +345,7 @@ function Projects() {
 
         <div className="text-center mt-4">
           <Button
-            variant="outline-primary"
+            variant="primary"
             href="https://github.com/HIPgirl95"
             target="_blank"
           >

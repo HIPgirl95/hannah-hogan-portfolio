@@ -6,13 +6,6 @@ function Experience() {
     <section id="experience" className="experience-section py-5 bg-light">
       <Container className="py-5">
         <div className="text-center mb-5">
-          <Badge
-            bg="light"
-            text="success"
-            className="mb-2 px-3 py-2 border border-success"
-          >
-            Experience
-          </Badge>
           <h2 className="display-5 fw-bold">Work Experience</h2>
           <p
             className="lead text-secondary mx-auto"

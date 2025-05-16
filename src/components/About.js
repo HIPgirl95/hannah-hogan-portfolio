@@ -1,17 +1,10 @@
-import { Container, Row, Col, Badge } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 function About() {
   return (
     <section id="about" className="about-section py-5 bg-light">
       <Container className="py-5">
         <div className="text-center mb-5">
-          <Badge
-            bg="light"
-            text="secondary"
-            className="mb-2 px-3 py-2 border border-secondary"
-          >
-            About Me
-          </Badge>
           <h2 className="display-5 fw-bold">My Journey as a Developer</h2>
           <p
             className="lead text-secondary mx-auto"
