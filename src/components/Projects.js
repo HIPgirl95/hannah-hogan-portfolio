@@ -45,64 +45,48 @@ function Projects() {
         </div>
 
         <Row>
-          {/* Project 1 with Case Study */}
+          {/* Project 1*/}
           <Col lg={4} md={6} className="mb-4">
             <Card className="h-100 border-primary border-opacity-25 project-card">
-              <div className="position-relative">
-                <Card.Img
-                  variant="top"
-                  src="https://via.placeholder.com/600x400"
-                  alt="E-commerce Platform"
-                />
-                <Badge
-                  bg="primary"
-                  className="position-absolute top-0 end-0 m-2"
-                >
-                  Case Study
-                </Badge>
-              </div>
               <Card.Body>
-                <Card.Title>E-commerce Platform</Card.Title>
-                <Card.Subtitle className="mb-3 text-secondary">
-                  Full-stack online shopping platform
+                <Card.Title>Pokedex App</Card.Title>
+                <Card.Subtitle className="mb-3 text-primary">
+                  Interactive Pokemon database
                 </Card.Subtitle>
                 <div className="mb-3">
-                  <Badge bg="secondary" className="me-1">
-                    React
+                  <Badge bg="primary" className="me-1">
+                    API
                   </Badge>
-                  <Badge bg="secondary" className="me-1">
-                    Node.js
+                  <Badge bg="primary" className="me-1">
+                    Bootstrap
                   </Badge>
-                  <Badge bg="secondary" className="me-1">
-                    MongoDB
+                  <Badge bg="primary" className="me-1">
+                    JavaScript
                   </Badge>
-                  <Badge bg="secondary">Stripe</Badge>
-                </div>
-                <Card.Text className="text-secondary">
-                  A complete e-commerce solution with product management, cart
-                  functionality, and secure payment processing.
+                </div>{" "}
+                <Card.Img
+                  variant="top"
+                  src="/images/Pokedex.png"
+                  alt="Pokedex App"
+                />
+                <Card.Text className="text-primary">
+                  Displays Pokemon data using the PokeAPI. Click on a Pokemon
+                  name to open a modal with more details.
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
                 <Button
                   variant="outline-primary"
                   size="sm"
-                  href="https://github.com"
+                  href="https://github.com/HIPgirl95/Pokedex"
                   target="_blank"
                 >
                   <BsGithub className="me-1" /> Code
                 </Button>
                 <Button
-                  variant="outline-primary"
-                  size="sm"
-                  onClick={handleShow}
-                >
-                  <BsFileText className="me-1" /> Case Study
-                </Button>
-                <Button
                   variant="primary"
                   size="sm"
-                  href="https://example.com"
+                  href="https://hipgirl95.github.io/Pokedex/"
                   target="_blank"
                 >
                   <BsBoxArrowUpRight className="me-1" /> Demo
@@ -113,32 +97,233 @@ function Projects() {
 
           {/* Project 2 */}
           <Col lg={4} md={6} className="mb-4">
-            <Card className="h-100 border-success border-opacity-25 project-card">
-              <Card.Img
-                variant="top"
-                src="https://via.placeholder.com/600x400"
-                alt="Task Management App"
-              />
+            <Card className="h-100 border-secondary border-opacity-25 project-card">
               <Card.Body>
-                <Card.Title>Task Management App</Card.Title>
+                <Card.Title>Movie API</Card.Title>
                 <Card.Subtitle className="mb-3 text-secondary">
-                  Collaborative project management tool
+                  From-scratch API development
                 </Card.Subtitle>
                 <div className="mb-3">
                   <Badge bg="secondary" className="me-1">
-                    Next.js
+                    Node.js
                   </Badge>
                   <Badge bg="secondary" className="me-1">
-                    TypeScript
+                    Postman
                   </Badge>
                   <Badge bg="secondary" className="me-1">
-                    Prisma
+                    PostgreSQL
                   </Badge>
-                  <Badge bg="secondary">PostgreSQL</Badge>
+                  <Badge bg="secondary">Express</Badge>
                 </div>
+                <Card.Img
+                  variant="top"
+                  src="/images/api.png"
+                  alt="Movie API"
+                  height="300"
+                />
                 <Card.Text className="text-secondary">
-                  A real-time task management application with team
-                  collaboration features and progress tracking.
+                  I created an API from scratch using Node.js and Express. It
+                  allows users to search for movies, view details, and manage
+                  profiles
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
+                <Button
+                  variant="outline-success"
+                  size="sm"
+                  href="https://github.com/HIPgirl95/movie_api"
+                  target="_blank"
+                >
+                  <BsGithub className="me-1" /> Code
+                </Button>
+              </Card.Footer>
+            </Card>
+          </Col>
+
+          {/* Project 3 with case study */}
+          <Col lg={4} md={6} className="mb-4">
+            <Card className="h-100 border-info border-opacity-25 project-card">
+              <div className="position-relative">
+                <Badge bg="info" className="position-absolute top-0 end-0 m-2">
+                  Case Study
+                </Badge>
+              </div>
+              <Card.Body>
+                <Card.Title>React myFlix Client</Card.Title>
+                <Card.Subtitle className="mb-3 text-info">
+                  React-based movie database client
+                </Card.Subtitle>
+                <div className="mb-3">
+                  <Badge bg="info" className="me-1">
+                    React
+                  </Badge>
+                  <Badge bg="info" className="me-1">
+                    React Router
+                  </Badge>
+                  <Badge bg="info" className="me-1">
+                    MongoDB
+                  </Badge>
+                  <Badge bg="info">React-Bootstrap</Badge>
+                </div>
+                <Card.Img
+                  variant="top"
+                  src="/images/myFlix-React.png"
+                  alt="React myFlix Client"
+                />
+                <Card.Text className="text-info">
+                  This is a client-side application for the myFlix movie
+                  database. It allows users to view and manage their favorite
+                  movies, including filtering and saving favorites. It is not
+                  currently operational, but I'm working on it.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
+                <Button
+                  variant="outline-info"
+                  size="sm"
+                  href="https://github.com/HIPgirl95/myFlix-client"
+                  target="_blank"
+                >
+                  <BsGithub className="me-1" /> Code
+                </Button>
+                <Button variant="outline-info" size="sm" onClick={handleShow}>
+                  <BsFileText className="me-1" /> Case Study
+                </Button>
+                <Button
+                  variant="info"
+                  size="sm"
+                  href="https://my-flix-hannah-hogan.netlify.app/"
+                  target="_blank"
+                >
+                  <BsBoxArrowUpRight className="me-1" /> Demo
+                </Button>
+              </Card.Footer>
+            </Card>
+          </Col>
+        </Row>
+        <Row>
+          {/* Project 4 */}
+          <Col lg={4} md={6} className="mb-4">
+            <Card className="h-100 border-success border-opacity-25 project-card">
+              <Card.Body>
+                <Card.Title>Meet App</Card.Title>
+                <Card.Subtitle className="mb-3 text-success">
+                  Displays events and allows filtering
+                </Card.Subtitle>
+                <div className="mb-3">
+                  <Badge bg="success" className="me-1">
+                    Recharts
+                  </Badge>
+                  <Badge bg="success" className="me-1">
+                    Jest
+                  </Badge>
+                  <Badge bg="success" className="me-1">
+                    JavaScript
+                  </Badge>
+                  <Badge bg="success">React</Badge>
+                </div>{" "}
+                <Card.Img
+                  variant="top"
+                  src="/images/meetApp.png"
+                  alt="Meet App"
+                />
+                <Card.Text className="text-success">
+                  Using React, I made an app where you can look at events! Some
+                  of the fun features of this include: an actual downloadable
+                  app, offline access, and data charts!
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
+                <Button
+                  variant="outline-success"
+                  size="sm"
+                  href="https://github.com/HIPgirl95/meet"
+                  target="_blank"
+                >
+                  <BsGithub className="me-1" /> Code
+                </Button>
+                <Button
+                  variant="success"
+                  size="sm"
+                  href="https://hipgirl95.github.io/meet/"
+                  target="_blank"
+                >
+                  <BsBoxArrowUpRight className="me-1" /> Demo
+                </Button>
+              </Card.Footer>
+            </Card>
+          </Col>
+
+          {/* Project 5 */}
+          <Col lg={4} md={6} className="mb-4">
+            <Card className="h-100 border-primary border-opacity-25 project-card">
+              <Card.Body>
+                <Card.Title>Mobile Chat App</Card.Title>
+                <Card.Subtitle className="mb-3 text-primary">
+                  Real-time messaging platform
+                </Card.Subtitle>
+                <div className="mb-3">
+                  <Badge bg="primary" className="me-1">
+                    React Native
+                  </Badge>
+                  <Badge bg="primary" className="me-1">
+                    GiftedChat
+                  </Badge>
+                  <Badge bg="primary" className="me-1">
+                    Firebase
+                  </Badge>
+                  <Badge bg="primary">Expo</Badge>
+                </div>
+                <Card.Img src="/images/Mobile-App.png" alt="Mobile Chat App" />
+                <Card.Text className="text-primary">
+                  This app allows users to send and receive messages in
+                  real-time. It also allows users to share images and their
+                  location, after asking for permission, of course. It uses
+                  Firebase for authentication and data storage, and GiftedChat
+                  for the chat interface.
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
+                <Button
+                  variant="outline-primary"
+                  size="sm"
+                  href="https://github.com/HIPgirl95/mobile-app"
+                  target="_blank"
+                >
+                  <BsGithub className="me-1" /> Code
+                </Button>
+              </Card.Footer>
+            </Card>
+          </Col>
+
+          {/* Project 6 */}
+          <Col lg={4} md={6} className="mb-4">
+            <Card className="h-100 border-info border-opacity-25 project-card">
+              <Card.Body>
+                <Card.Title>Angular myFlix Client</Card.Title>
+                <Card.Subtitle className="mb-3 text-secondary">
+                  Angular-based movie database client
+                </Card.Subtitle>
+                <div className="mb-3">
+                  <Badge bg="secondary" className="me-1">
+                    Angular
+                  </Badge>
+                  <Badge bg="secondary" className="me-1">
+                    Chart.js
+                  </Badge>
+                  <Badge bg="secondary" className="me-1">
+                    Weather API
+                  </Badge>
+                  <Badge bg="secondary">Bootstrap</Badge>
+                </div>
+                <Card.Img
+                  variant="top"
+                  src="/images/myFlix-Angular.png"
+                  alt="Angular myFlix Client"
+                />
+                <Card.Text className="text-secondary">
+                  An interactive weather dashboard with location-based
+                  forecasts, historical data, and visual charts.
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
@@ -161,63 +346,12 @@ function Projects() {
               </Card.Footer>
             </Card>
           </Col>
-
-          {/* Project 3 */}
-          <Col lg={4} md={6} className="mb-4">
-            <Card className="h-100 border-info border-opacity-25 project-card">
-              <Card.Img
-                variant="top"
-                src="https://via.placeholder.com/600x400"
-                alt="Weather Dashboard"
-              />
-              <Card.Body>
-                <Card.Title>Weather Dashboard</Card.Title>
-                <Card.Subtitle className="mb-3 text-secondary">
-                  Real-time weather visualization
-                </Card.Subtitle>
-                <div className="mb-3">
-                  <Badge bg="secondary" className="me-1">
-                    React
-                  </Badge>
-                  <Badge bg="secondary" className="me-1">
-                    Chart.js
-                  </Badge>
-                  <Badge bg="secondary" className="me-1">
-                    Weather API
-                  </Badge>
-                  <Badge bg="secondary">Bootstrap</Badge>
-                </div>
-                <Card.Text className="text-secondary">
-                  An interactive weather dashboard with location-based
-                  forecasts, historical data, and visual charts.
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
-                <Button
-                  variant="outline-info"
-                  size="sm"
-                  href="https://github.com"
-                  target="_blank"
-                >
-                  <BsGithub className="me-1" /> Code
-                </Button>
-                <Button
-                  variant="info"
-                  size="sm"
-                  href="https://example.com"
-                  target="_blank"
-                >
-                  <BsBoxArrowUpRight className="me-1" /> Demo
-                </Button>
-              </Card.Footer>
-            </Card>
-          </Col>
         </Row>
 
         <div className="text-center mt-4">
           <Button
             variant="outline-primary"
-            href="https://github.com"
+            href="https://github.com/HIPgirl95"
             target="_blank"
           >
             View More Projects <BsArrowRight className="ms-2" />
@@ -333,14 +467,14 @@ function Projects() {
           <Modal.Footer>
             <Button
               variant="outline-primary"
-              href="/case-study.pdf"
+              href="/case-studies/myFlixCaseStudy.pdf"
               target="_blank"
             >
               <BsDownload className="me-2" /> Download Full Case Study (PDF)
             </Button>
             <Button
               variant="primary"
-              href="https://example.com"
+              href="https://my-flix-hannah-hogan.netlify.app/"
               target="_blank"
             >
               <BsBoxArrowUpRight className="me-2" /> View Live Project
