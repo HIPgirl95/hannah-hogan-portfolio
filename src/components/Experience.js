@@ -29,28 +29,32 @@ function Experience() {
               <Card className="border-0 shadow-sm">
                 <Card.Body>
                   <div className="d-flex justify-content-between align-items-center mb-2">
-                    <h3 className="h5 fw-bold mb-0">Senior Developer</h3>
+                    <h3 className="h5 fw-bold mb-0">High School Teacher</h3>
                     <Badge bg="primary" className="date-badge">
-                      2020 - Present
+                      2021 - Present
                     </Badge>
                   </div>
-                  <h4 className="h6 fw-bold mb-2">TechCorp Inc.</h4>
+                  <h4 className="h6 fw-bold mb-2">
+                    Master's Academy Art and Academics
+                  </h4>
                   <div className="d-flex align-items-center text-secondary mb-3">
-                    <BsGeoAlt className="me-1" /> San Francisco, CA
+                    <BsGeoAlt className="me-1" /> Marietta, GA
                   </div>
                   <p className="text-secondary">
-                    Led a team of 5 developers in building enterprise-level web
-                    applications. Implemented CI/CD pipelines and improved
-                    application performance by 40%.
+                    Taught diverse subjects including math, chemistry, and
+                    physics, adapting quickly as a substitute or full-time
+                    instructor. Designed comprehensive lesson plans and
+                    assessments, while delivering personalized support to foster
+                    student growth.
                   </p>
                   <div className="mt-3">
                     <Badge bg="primary" className="me-1">
-                      React
+                      Problem Solving
                     </Badge>
                     <Badge bg="success" className="me-1">
-                      Node.js
+                      Project planning
                     </Badge>
-                    <Badge bg="info">AWS</Badge>
+                    <Badge bg="info">Classroom management</Badge>
                   </div>
                 </Card.Body>
               </Card>
@@ -66,28 +70,29 @@ function Experience() {
               <Card className="border-0 shadow-sm">
                 <Card.Body>
                   <div className="d-flex justify-content-between align-items-center mb-2">
-                    <h3 className="h5 fw-bold mb-0">Full Stack Developer</h3>
+                    <h3 className="h5 fw-bold mb-0">Online Math Teacher</h3>
                     <Badge bg="success" className="date-badge">
-                      2018 - 2020
+                      2019 - 2024
                     </Badge>
                   </div>
-                  <h4 className="h6 fw-bold mb-2">WebSolutions LLC</h4>
+                  <h4 className="h6 fw-bold mb-2">Wonder Math</h4>
                   <div className="d-flex align-items-center text-secondary mb-3">
-                    <BsGeoAlt className="me-1" /> Seattle, WA
+                    <BsGeoAlt className="me-1" /> Online
                   </div>
                   <p className="text-secondary">
-                    Developed and maintained multiple client websites and web
-                    applications. Collaborated with designers to implement
-                    responsive UI/UX designs.
+                    Delivered online math instruction to elementary students
+                    using interactive storytelling and gamification. Integrated
+                    digital tools to enhance learning and partnered with
+                    teachers and parents to monitor progress and tailor lessons.
                   </p>
                   <div className="mt-3">
                     <Badge bg="primary" className="me-1">
-                      Angular
+                      Tech Integration
                     </Badge>
                     <Badge bg="success" className="me-1">
-                      Express
+                      Collaboration
                     </Badge>
-                    <Badge bg="info">MongoDB</Badge>
+                    <Badge bg="info">Student Engagement</Badge>
                   </div>
                 </Card.Body>
               </Card>
@@ -107,28 +112,30 @@ function Experience() {
               <Card className="border-0 shadow-sm">
                 <Card.Body>
                   <div className="d-flex justify-content-between align-items-center mb-2">
-                    <h3 className="h5 fw-bold mb-0">Junior Web Developer</h3>
+                    <h3 className="h5 fw-bold mb-0">Professional Tutor</h3>
                     <Badge bg="info" className="date-badge">
-                      2016 - 2018
+                      2017 - 2019
                     </Badge>
                   </div>
-                  <h4 className="h6 fw-bold mb-2">Digital Creations</h4>
+                  <h4 className="h6 fw-bold mb-2">Revolution Prep</h4>
                   <div className="d-flex align-items-center text-secondary mb-3">
-                    <BsGeoAlt className="me-1" /> Portland, OR
+                    <BsGeoAlt className="me-1" /> Online
                   </div>
                   <p className="text-secondary">
-                    Started as an intern and grew into a full-time role. Built
-                    and maintained client websites, fixed bugs, and implemented
-                    new features.
+                    Provided personalized tutoring in math, science, and test
+                    preparation through virtual platforms. Crafted
+                    individualized lesson plans and assessments to meet student
+                    needs, and offered detailed feedback to learners and
+                    parents.
                   </p>
                   <div className="mt-3">
                     <Badge bg="primary" className="me-1">
-                      JavaScript
+                      Customized Instruction
                     </Badge>
                     <Badge bg="success" className="me-1">
-                      PHP
+                      Data Analysis
                     </Badge>
-                    <Badge bg="info">MySQL</Badge>
+                    <Badge bg="info">Feedback Delivery</Badge>
                   </div>
                 </Card.Body>
               </Card>
