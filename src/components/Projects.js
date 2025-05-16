@@ -28,13 +28,6 @@ function Projects() {
     <section id="projects" className="projects-section py-5">
       <Container className="py-5">
         <div className="text-center mb-5">
-          <Badge
-            bg="light"
-            text="primary"
-            className="mb-2 px-3 py-2 border border-primary"
-          >
-            Portfolio
-          </Badge>
           <h2 className="display-5 fw-bold">Featured Projects</h2>
           <p
             className="lead text-secondary mx-auto"
@@ -47,20 +40,20 @@ function Projects() {
         <Row>
           {/* Project 1*/}
           <Col lg={4} md={6} className="mb-4">
-            <Card className="h-100 border-primary border-opacity-25 project-card">
+            <Card className="h-100 border-info border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Pokedex App</Card.Title>
-                <Card.Subtitle className="mb-3 text-primary">
+                <Card.Subtitle className="mb-3 text-info">
                   Interactive Pokemon database
                 </Card.Subtitle>
                 <div className="mb-3">
-                  <Badge bg="primary" className="me-1">
+                  <Badge bg="info" className="me-1">
                     API
                   </Badge>
-                  <Badge bg="primary" className="me-1">
+                  <Badge bg="info" className="me-1">
                     Bootstrap
                   </Badge>
-                  <Badge bg="primary" className="me-1">
+                  <Badge bg="info" className="me-1">
                     JavaScript
                   </Badge>
                 </div>{" "}
@@ -69,14 +62,14 @@ function Projects() {
                   src="/images/Pokedex.png"
                   alt="Pokedex App"
                 />
-                <Card.Text className="text-primary">
+                <Card.Text className="text-info">
                   Displays Pokemon data using the PokeAPI. Click on a Pokemon
                   name to open a modal with more details.
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
                 <Button
-                  variant="outline-primary"
+                  variant="outline-info"
                   size="sm"
                   href="https://github.com/HIPgirl95/Pokedex"
                   target="_blank"
@@ -84,7 +77,7 @@ function Projects() {
                   <BsGithub className="me-1" /> Code
                 </Button>
                 <Button
-                  variant="primary"
+                  variant="info"
                   size="sm"
                   href="https://hipgirl95.github.io/Pokedex/"
                   target="_blank"
@@ -97,23 +90,23 @@ function Projects() {
 
           {/* Project 2 */}
           <Col lg={4} md={6} className="mb-4">
-            <Card className="h-100 border-secondary border-opacity-25 project-card">
+            <Card className="h-100 border-success border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Movie API</Card.Title>
-                <Card.Subtitle className="mb-3 text-secondary">
+                <Card.Subtitle className="mb-3 text-success">
                   From-scratch API development
                 </Card.Subtitle>
                 <div className="mb-3">
-                  <Badge bg="secondary" className="me-1">
+                  <Badge bg="success" className="me-1">
                     Node.js
                   </Badge>
-                  <Badge bg="secondary" className="me-1">
+                  <Badge bg="success" className="me-1">
                     Postman
                   </Badge>
-                  <Badge bg="secondary" className="me-1">
+                  <Badge bg="success" className="me-1">
                     PostgreSQL
                   </Badge>
-                  <Badge bg="secondary">Express</Badge>
+                  <Badge bg="success">Express</Badge>
                 </div>
                 <Card.Img
                   variant="top"
@@ -121,7 +114,7 @@ function Projects() {
                   alt="Movie API"
                   height="300"
                 />
-                <Card.Text className="text-secondary">
+                <Card.Text className="text-success">
                   I created an API from scratch using Node.js and Express. It
                   allows users to search for movies, view details, and manage
                   profiles
@@ -301,36 +294,38 @@ function Projects() {
             <Card className="h-100 border-info border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Angular myFlix Client</Card.Title>
-                <Card.Subtitle className="mb-3 text-secondary">
+                <Card.Subtitle className="mb-3 text-success">
                   Angular-based movie database client
                 </Card.Subtitle>
                 <div className="mb-3">
-                  <Badge bg="secondary" className="me-1">
+                  <Badge bg="success" className="me-1">
                     Angular
                   </Badge>
-                  <Badge bg="secondary" className="me-1">
-                    Chart.js
+                  <Badge bg="success" className="me-1">
+                    Material
                   </Badge>
-                  <Badge bg="secondary" className="me-1">
-                    Weather API
+                  <Badge bg="success" className="me-1">
+                    RxJS
                   </Badge>
-                  <Badge bg="secondary">Bootstrap</Badge>
+                  <Badge bg="success">TypeScript</Badge>
                 </div>
                 <Card.Img
                   variant="top"
                   src="/images/myFlix-Angular.png"
                   alt="Angular myFlix Client"
                 />
-                <Card.Text className="text-secondary">
-                  An interactive weather dashboard with location-based
-                  forecasts, historical data, and visual charts.
+                <Card.Text className="text-success">
+                  This is a client-side application for the myFlix movie
+                  database, but made with Angular! It allows users to view and
+                  filter movies, as well as manage their favorites. It IS
+                  currently operational.
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
                 <Button
                   variant="outline-success"
                   size="sm"
-                  href="https://github.com"
+                  href="https://github.com/HIPgirl95/myFlix-Angular"
                   target="_blank"
                 >
                   <BsGithub className="me-1" /> Code
@@ -338,7 +333,7 @@ function Projects() {
                 <Button
                   variant="success"
                   size="sm"
-                  href="https://example.com"
+                  href="https://hipgirl95.github.io/myFlix-Angular/welcome"
                   target="_blank"
                 >
                   <BsBoxArrowUpRight className="me-1" /> Demo
