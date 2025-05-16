@@ -151,13 +151,10 @@ function Projects() {
                 </Card.Subtitle>
                 <div className="mb-3">
                   <Badge bg="primary" className="me-1">
-                    React
+                    MERN stack
                   </Badge>
                   <Badge bg="primary" className="me-1">
                     React Router
-                  </Badge>
-                  <Badge bg="primary" className="me-1">
-                    MongoDB
                   </Badge>
                   <Badge bg="primary">React-Bootstrap</Badge>
                 </div>
@@ -363,106 +360,106 @@ function Projects() {
         {/* Case Study Modal */}
         <Modal show={showCaseStudy} onHide={handleClose} size="lg">
           <Modal.Header closeButton>
-            <Modal.Title>E-commerce Platform Case Study</Modal.Title>
+            <Modal.Title>myFlix React Client Case Study</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <p className="text-secondary mb-4">
-              A comprehensive overview of the project, challenges, and
-              solutions.
-            </p>
-
             <h4>Project Overview</h4>
-            <p className="text-secondary mb-4">
-              This e-commerce platform was developed for a client in the fashion
-              industry who needed a scalable solution to sell their products
-              online. The project involved creating a complete shopping
-              experience from product browsing to checkout and order management.
+            <p className="text-primary mb-4">
+              myFlix is a full-stack movie database app that empowers users to
+              browse, filter, and manage favorite movies in a fast and
+              accessible interface. Built using the MERN stack, it emphasizes
+              responsive design, performance, and clean user experience.
             </p>
 
             <div className="mb-4">
               <img
-                src="https://via.placeholder.com/800x400"
+                src="/images/myFlix-React.png"
                 alt="E-commerce Platform Screenshot"
                 className="img-fluid rounded mb-3"
               />
             </div>
-
+            <h4>Key Features</h4>
+            <ul className="text-primary mb-4">
+              <li>User registration, login, and profile management</li>
+              <li>Favorite movie list with add/remove functionality</li>
+              <li>Genre, director, and movie detail modals</li>
+              <li>Responsive design for mobile and desktop</li>
+            </ul>
             <h4>Challenges</h4>
-            <ul className="text-secondary mb-4">
+            <ul className="text-info mb-4">
               <li>
-                Implementing a secure payment processing system that complied
-                with PCI standards
+                Creating a secure authentication and authorization system for
+                user accounts.
               </li>
               <li>
-                Creating a responsive design that worked seamlessly across all
-                devices
+                Designing a responsive layout that worked seamlessly across all
+                devices.
               </li>
               <li>
-                Building a robust inventory management system with real-time
-                stock updates
+                Ensuring dynamic rendering of movie cards in real-time as new
+                data was added to the database.
               </li>
               <li>
-                Optimizing performance for a large product catalog with complex
-                filtering options
+                Enhancing the UI/UX to ensure smooth navigation, accessibility,
+                and performance.
               </li>
             </ul>
 
             <h4>Solutions</h4>
-            <ul className="text-secondary mb-4">
+            <ul className="text-primary mb-4">
               <li>
-                Integrated Stripe for secure payment processing with custom
-                checkout flow
+                Implemented JWT-based authentication with encrypted password
+                storage and protected API endpoints using Express.js and
+                MongoDB.
               </li>
               <li>
-                Implemented a mobile-first design approach using Bootstrap and
-                responsive components
+                Used Bootstrap, SCSS, and Flexbox/Grid to build a fully
+                responsive interface with consistent component styling across
+                devices.
               </li>
               <li>
-                Developed a custom inventory system with webhooks for real-time
-                updates
+                Fetched movie data from a RESTful API and rendered it
+                dynamically using React state, hooks, and array mapping
+                (`.map()`).
               </li>
               <li>
-                Utilized Redis caching and optimized database queries for faster
-                product browsing
-              </li>
-            </ul>
-
-            <h4>Results</h4>
-            <ul className="text-secondary mb-4">
-              <li>
-                50% increase in mobile conversions compared to the client's
-                previous platform
-              </li>
-              <li>99.9% uptime even during high-traffic sales events</li>
-              <li>30% reduction in cart abandonment rate</li>
-              <li>
-                Seamless integration with existing inventory and fulfillment
-                systems
+                Focused on high contrasting colors and clear typography for
+                better readability and accessibility.
               </li>
             </ul>
 
             <h4>Technologies Used</h4>
+            <p className="text-secondary mb-4">
+              This project leveraged several tools across the full development
+              stack:
+            </p>
             <div className="mb-3">
               <Badge bg="primary" className="me-1 p-2">
-                React
-              </Badge>
-              <Badge bg="success" className="me-1 p-2">
-                Node.js
-              </Badge>
-              <Badge bg="info" className="me-1 p-2">
                 MongoDB
               </Badge>
-              <Badge bg="primary" className="me-1 p-2">
-                Stripe API
-              </Badge>
               <Badge bg="success" className="me-1 p-2">
-                Redis
+                Express
               </Badge>
               <Badge bg="info" className="me-1 p-2">
-                AWS S3
+                React
               </Badge>
               <Badge bg="primary" className="me-1 p-2">
-                Bootstrap
+                Node.js
+              </Badge>
+              <Badge bg="success" className="me-1 p-2">
+                React Router
+              </Badge>
+              <Badge bg="info" className="me-1 p-2">
+                React-Bootstrap
+              </Badge>
+              <Badge bg="primary" className="me-1 p-2">
+                Postman
+              </Badge>
+              <Badge bg="success" className="me-1 p-2">
+                JWT
+              </Badge>
+              <Badge bg="info" className="me-1 p-2">
+                Git
               </Badge>
             </div>
           </Modal.Body>
