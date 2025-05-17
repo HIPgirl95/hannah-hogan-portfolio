@@ -46,7 +46,11 @@ function About() {
                 <Col md={6}>
                   <h3 className="h5 fw-bold">Education</h3>
                   <p className="text-secondary">
-                    Bachelor of Science | Physics Education
+                    Bachelor of Science | <br />
+                    Physics Education
+                  </p>
+                  <p className="text-secondary">
+                    Full-Stack Immersion | CareerFoundry
                   </p>
                 </Col>
                 <Col md={6}>

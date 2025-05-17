@@ -23,6 +23,9 @@ function Hero() {
                 I build responsive, user-friendly web applications with modern
                 technologies.
               </p>
+              <p className="lead text-secondary mb-4">
+                Based out of Marietta, GA
+              </p>
               <div className="d-flex flex-wrap gap-2 mb-4">
                 <Button
                   variant="primary"
