@@ -347,15 +347,6 @@ function Projects() {
           </Col>
         </Row>
 
-        <div className="text-center mt-4">
-          <Button
-            variant="primary"
-            href="https://github.com/HIPgirl95"
-            target="_blank"
-          >
-            View More Projects <BsArrowRight className="ms-2" />
-          </Button>
-        </div>
 
         {/* Case Study Modal */}
         <Modal show={showCaseStudy} onHide={handleClose} size="lg">
