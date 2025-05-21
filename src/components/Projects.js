@@ -39,10 +39,10 @@ function Projects() {
         <Row>
           {/* Project 1*/}
           <Col lg={4} className="mb-4">
-            <Card className="h-100 border-info border-opacity-25 project-card">
+            <Card className="h-100 border-primary border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Pokedex App</Card.Title>
-                <Card.Subtitle className="mb-3 text-info">
+                <Card.Subtitle className="mb-3 text-primary">
                   Interactive Pokemon database
                 </Card.Subtitle>
                 <div className="mb-3">
@@ -61,14 +61,14 @@ function Projects() {
                   src="/images/Pokedex.png"
                   alt="Pokedex App"
                 />
-                <Card.Text className="text-info">
+                <Card.Text className="text-primary">
                   Displays Pokemon data using the PokeAPI. Click on a Pokemon
                   name to open a modal with more details.
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
                 <Button
-                  variant="outline-info"
+                  variant="outline-primary"
                   size="sm"
                   href="https://github.com/HIPgirl95/Pokedex"
                   target="_blank"
@@ -134,7 +134,7 @@ function Projects() {
 
           {/* Project 3 with case study */}
           <Col lg={4} className="mb-4">
-            <Card className="h-100 border-info border-opacity-25 project-card">
+            <Card className="h-100 border-primary border-opacity-25 project-card">
               <div className="position-relative">
                 <Badge
                   bg="primary"
@@ -145,7 +145,7 @@ function Projects() {
               </div>
               <Card.Body>
                 <Card.Title>React myFlix Client</Card.Title>
-                <Card.Subtitle className="mb-3 text-info">
+                <Card.Subtitle className="mb-3 text-primary">
                   React-based movie database client
                 </Card.Subtitle>
                 <div className="mb-3">
@@ -162,7 +162,7 @@ function Projects() {
                   src="/images/myFlix-React.png"
                   alt="React myFlix Client"
                 />
-                <Card.Text className="text-info">
+                <Card.Text className="text-primary">
                   This is a client-side application for the myFlix movie
                   database. It allows users to view and manage their favorite
                   movies, including filtering and saving favorites. It is not
@@ -171,7 +171,7 @@ function Projects() {
               </Card.Body>
               <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
                 <Button
-                  variant="outline-info"
+                  variant="outline-primary"
                   size="sm"
                   href="https://github.com/HIPgirl95/myFlix-client"
                   target="_blank"
@@ -179,7 +179,7 @@ function Projects() {
                   <BsGithub className="me-1" /> Code
                 </Button>
                 <Button
-                  variant="outline-info"
+                  variant="outline-primary"
                   size="sm"
                   onClick={handleShow}
                 >
@@ -252,10 +252,10 @@ function Projects() {
 
           {/* Project 5 */}
           <Col lg={4} className="mb-4">
-            <Card className="h-100 border-info border-opacity-25 project-card">
+            <Card className="h-100 border-primary border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Mobile Chat App</Card.Title>
-                <Card.Subtitle className="mb-3 text-info">
+                <Card.Subtitle className="mb-3 text-primary">
                   Real-time messaging platform
                 </Card.Subtitle>
                 <div className="mb-3">
@@ -271,7 +271,7 @@ function Projects() {
                   <Badge bg="primary">Expo</Badge>
                 </div>
                 <Card.Img src="/images/Mobile-App.png" alt="Mobile Chat App" />
-                <Card.Text className="text-info">
+                <Card.Text className="text-primary">
                   This app allows users to send and receive messages in
                   real-time. It also allows users to share images and their
                   location, after asking for permission, of course. It uses
@@ -281,7 +281,7 @@ function Projects() {
               </Card.Body>
               <Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
                 <Button
-                  variant="outline-info"
+                  variant="outline-primary"
                   size="sm"
                   href="https://github.com/HIPgirl95/mobile-app"
                   target="_blank"
@@ -294,7 +294,7 @@ function Projects() {
 
           {/* Project 6 */}
           <Col lg={4} className="mb-4">
-            <Card className="h-100 border-info border-opacity-25 project-card">
+            <Card className="h-100 border-primary border-opacity-25 project-card">
               <Card.Body>
                 <Card.Title>Angular myFlix Client</Card.Title>
                 <Card.Subtitle className="mb-3 text-success">
