@@ -15,7 +15,6 @@ import {
   BsBoxArrowUpRight,
   BsFileText,
   BsDownload,
-  BsArrowRight,
 } from "react-icons/bs";
 
 function Projects() {
