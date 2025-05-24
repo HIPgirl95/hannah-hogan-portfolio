@@ -353,6 +353,11 @@ function Projects() {
             <Modal.Title>myFlix React Client Case Study</Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <object data="/case-studies/myFlixCaseStudy.pdf" type="image/jpg" width="100%" height="600px">
+            <p className="text-center text-secondary">
+              If the PDF does not load, you can download it{" "}
+              </p>
+            </object>
             <h4>Project Overview</h4>
             <p className="text-primary mb-4">
               myFlix is a full-stack movie database app that empowers users to
