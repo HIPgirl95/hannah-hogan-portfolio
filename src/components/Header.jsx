@@ -18,7 +18,7 @@ function Header({ theme, toggleTheme }) {
     >
       <Container>
         <Navbar.Brand href="#home" className="logo fw-bold fs-4">
-          <span className="text-primary">Hannah</span>Hogan
+          <span className="colored-text">Hannah</span>Hogan
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
@@ -44,8 +44,7 @@ function Header({ theme, toggleTheme }) {
           </Nav>
           <div className="d-flex align-items-center">
             <Button
-              variant="outline-primary"
-              className="me-2"
+              className="me-2 outline-button"
               onClick={toggleTheme}
               aria-label={
                 theme === "dark"
@@ -55,7 +54,7 @@ function Header({ theme, toggleTheme }) {
             >
               {theme === "dark" ? <BsSun /> : <BsMoon />}
             </Button>
-            <Button variant="primary" href="#contact">
+            <Button className="colored-button" href="#contact">
               Hire Me
             </Button>
           </div>

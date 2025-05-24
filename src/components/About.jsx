@@ -5,11 +5,10 @@ function About() {
     <section id="about" className="about-section py-5 bg-light">
       <Container className="py-5">
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold">My Journey as a Developer</h2>
-          <p
-            className="lead text-secondary mx-auto"
-            style={{ maxWidth: "700px" }}
-          >
+          <h2 className="display-5 fw-bold">
+            My Journey as a <span className="colored-text">Developer</span>
+          </h2>
+          <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
             A full stack developer with a strong foundation in math and science
             education, dedicated to crafting seamless, meaningful user
             experiences.
@@ -44,20 +43,12 @@ function About() {
               </p>
               <Row>
                 <Col md={6}>
-                  <h3 className="h5 fw-bold">Education</h3>
-                  <p className="text-secondary">
+                  <h3 className="h5 fw-bold colored-text">Education</h3>
+                  <p>
                     Bachelor of Science | <br />
-                    Physics Education
+                    Physics Education | Georgia State University
                   </p>
-                  <p className="text-secondary">
-                    Full-Stack Immersion | CareerFoundry
-                  </p>
-                </Col>
-                <Col md={6}>
-                  <h3 className="h5 fw-bold">Location</h3>
-                  <p className="text-secondary">
-                    Georgia State University | Atlanta, GA
-                  </p>
+                  <p>Full-Stack Immersion | CareerFoundry</p>
                 </Col>
               </Row>
             </div>

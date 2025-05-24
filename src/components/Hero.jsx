@@ -15,30 +15,27 @@ function Hero() {
           <Col lg={6} className="mb-5 mb-lg-0">
             <div className="mb-4">
               <h1 className="display-4 fw-bold mb-3">
-                Hi, I'm <span className="text-primary">Hannah</span>
+                Hi, I'm <span className="colored-text">Hannah</span>
                 <br />
                 Full Stack Developer
               </h1>
-              <p className="lead text-secondary mb-4">
+              <p className="lead mb-4">
                 I build responsive, user-friendly web applications with modern
                 technologies.
               </p>
-              <p className="lead text-secondary mb-4">
-                Based out of Marietta, GA
-              </p>
+              <p className="lead mb-4">Based out of Marietta, GA</p>
               <div className="d-flex flex-wrap gap-2 mb-4">
                 <Button
-                  variant="primary"
                   href="#projects"
-                  className="d-flex align-items-center"
+                  className="d-flex align-items-center colored-button"
                 >
                   View My Work <BsArrowRight className="ms-2" />
                 </Button>
                 <Button
-                  variant="outline-primary"
+                  variant="outline"
                   href="/Hannah-Hogan-Resume.pdf"
                   target="_blank"
-                  className="d-flex align-items-center"
+                  className="d-flex align-items-center outline-button"
                 >
                   <BsDownload className="me-2" /> Resume
                 </Button>
@@ -48,7 +45,7 @@ function Hero() {
                   href="https://github.com/HIPgirl95/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary"
+                  className="colored-logo"
                 >
                   <BsGithub size={24} />
                   <span className="visually-hidden">GitHub</span>
@@ -57,14 +54,14 @@ function Hero() {
                   href="https://www.linkedin.com/in/hannah-i-hogan/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary"
+                  className="colored-logo"
                 >
                   <BsLinkedin size={24} />
                   <span className="visually-hidden">LinkedIn</span>
                 </a>
                 <a
                   href="mailto:hannah@internetworkflow.com"
-                  className="text-secondary"
+                  className="colored-logo"
                 >
                   <BsEnvelope size={24} />
                   <span className="visually-hidden">Email</span>
