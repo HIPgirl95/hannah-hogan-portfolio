@@ -9,13 +9,9 @@ import {
   Badge,
   Button,
   Modal,
+  Image,
 } from "react-bootstrap";
-import {
-  BsGithub,
-  BsBoxArrowUpRight,
-  BsFileText,
-  BsDownload,
-} from "react-icons/bs";
+import { BsGithub, BsBoxArrowUpRight, BsFileText } from "react-icons/bs";
 
 function Projects() {
   const [showCaseStudy, setShowCaseStudy] = useState(false);
@@ -352,114 +348,203 @@ function Projects() {
             <Modal.Title>myFlix React Client Case Study</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <h4>Project Overview</h4>
-            <p className="text-primary mb-4">
-              myFlix is a full-stack movie database app that empowers users to
-              browse, filter, and manage favorite movies in a fast and
-              accessible interface. Built using the MERN stack, it emphasizes
-              responsive design, performance, and clean user experience.
-            </p>
-
-            <div className="mb-4">
-              <img
+            <>
+              {/* ===== Overview =================================================== */}
+              <h4>Project Overview</h4>
+              <p className="text-primary mb-4">
+                <strong>myFlix</strong> was a project that I developed as part
+                of my Full-Stack web development course at CareerFoundry to
+                showcase what I learned about JavaScript and React. After
+                building an API containing movie information, I realized I
+                needed an effective way to present my work. To solve this, I
+                created myFlix – an intuitive and user-friendly interface that
+                allows users to seamlessly interact with my API.
+              </p>
+              <Image
                 src="/images/myFlix-React.png"
-                alt="E-commerce Platform Screenshot"
-                className="img-fluid rounded mb-3"
+                alt="myFlix React Client"
+                fluid
+                rounded
+                className="mb-4"
               />
-            </div>
-            <h4>Key Features</h4>
-            <ul className="text-primary mb-4">
-              <li>User registration, login, and profile management</li>
-              <li>Favorite movie list with add/remove functionality</li>
-              <li>Genre, director, and movie detail modals</li>
-              <li>Responsive design for mobile and desktop</li>
-            </ul>
-            <h4>Challenges</h4>
-            <ul className="text-info mb-4">
-              <li>
-                Creating a secure authentication and authorization system for
-                user accounts.
-              </li>
-              <li>
-                Designing a responsive layout that worked seamlessly across all
-                devices.
-              </li>
-              <li>
-                Ensuring dynamic rendering of movie cards in real-time as new
-                data was added to the database.
-              </li>
-              <li>
-                Enhancing the UI/UX to ensure smooth navigation, accessibility,
-                and performance.
-              </li>
-            </ul>
 
-            <h4>Solutions</h4>
-            <ul className="text-primary mb-4">
-              <li>
-                Implemented JWT-based authentication with encrypted password
-                storage and protected API endpoints using Express.js and
-                MongoDB.
-              </li>
-              <li>
-                Used Bootstrap, SCSS, and Flexbox/Grid to build a fully
-                responsive interface with consistent component styling across
-                devices.
-              </li>
-              <li>
-                Fetched movie data from a RESTful API and rendered it
-                dynamically using React state, hooks, and array mapping
-                (`.map()`).
-              </li>
-              <li>
-                Focused on high contrasting colors and clear typography for
-                better readability and accessibility.
-              </li>
-            </ul>
+              {/* ===== Team & Roles ============================================== */}
+              <h5>Team &amp; Mentorship</h5>
+              <ul className="text-info mb-4 ps-3">
+                <li>Lead Developer – Hannah Hogan</li>
+                <li>Mentor – Drew Mercer</li>
+                <li>Tutor – Davi Ferreira</li>
+                <li>Consultants – Tim Pamplin &amp; Jason Pamplin</li>
+              </ul>
 
-            <h4>Technologies Used</h4>
-            <p className="text-secondary mb-4">
-              This project leveraged several tools across the full development
-              stack:
-            </p>
-            <div className="mb-3">
-              <Badge bg="primary" className="me-1 p-2">
-                MongoDB
-              </Badge>
-              <Badge bg="success" className="me-1 p-2">
-                Express
-              </Badge>
-              <Badge bg="info" className="me-1 p-2">
-                React
-              </Badge>
-              <Badge bg="primary" className="me-1 p-2">
-                Node.js
-              </Badge>
-              <Badge bg="success" className="me-1 p-2">
-                React Router
-              </Badge>
-              <Badge bg="info" className="me-1 p-2">
-                React-Bootstrap
-              </Badge>
-              <Badge bg="primary" className="me-1 p-2">
-                Postman
-              </Badge>
-              <Badge bg="success" className="me-1 p-2">
-                JWT
-              </Badge>
-              <Badge bg="info" className="me-1 p-2">
-                Git
-              </Badge>
-            </div>
+              {/* ===== Tools & Tech ============================================== */}
+              <h4>Tools &amp; Tech Stack</h4>
+              <div className="mb-3">
+                {[
+                  { bg: "primary", label: "MERN stack" },
+                  { bg: "success", label: "Redux" },
+                  { bg: "info", label: "Bootstrap" },
+                  { bg: "primary", label: "Heroku" },
+                  { bg: "success", label: "Parcel" },
+                  { bg: "info", label: "Netlify" },
+                  { bg: "primary", label: "Postman" },
+                  { bg: "success", label: "Git/GitHub" },
+                  { bg: "info", label: "VS Code" },
+                ].map(({ bg, label }) => (
+                  <Badge key={label} bg={bg} className="me-1 p-2">
+                    {label}
+                  </Badge>
+                ))}
+              </div>
+
+              {/* ===== Architecture / Key Views ================================== */}
+              <h4>Application Architecture &amp; Key Views</h4>
+              <div className="text-primary mb-4">
+                {/* Main View */}
+                <div className="d-flex align-items-start mb-4">
+                  <Image
+                    src="/images/MainView.png"
+                    alt="Screenshot of main view"
+                    fluid
+                    rounded
+                    className="me-3"
+                    style={{ width: "30%" }}
+                  />
+                  <div>
+                    <strong>Main View:</strong> This view enables users to
+                    browse movies and see brief details about each one. To
+                    achieve this, I utilized React-Bootstrap’s Cards, allowing
+                    me to design a single card component and dynamically
+                    generate a new instance for each movie. This approach
+                    ensured a consistent and visually appealing layout while
+                    streamlining the development process.
+                  </div>
+                </div>
+
+                {/* Movie View */}
+                <div className="d-flex align-items-start mb-4">
+                  <div>
+                    <strong>Movie View:</strong> This view provides users with
+                    detailed information about a selected movie. For example,
+                    instead of simply displaying the director's name, it
+                    includes a short biography to offer more context.
+                    Additionally, this view allows users to add the movie to
+                    their favorites list, enhancing personalization and user
+                    engagement.
+                  </div>
+                  <Image
+                    src="/images/MovieView.png"
+                    alt="Screenshot of movie view"
+                    fluid
+                    rounded
+                    className="me-3"
+                    style={{ width: "30%" }}
+                  />
+                </div>
+
+                {/* Profile View */}
+                <div className="d-flex align-items-start mb-4">
+                  <Image
+                    src="/images/ProfileView.png"
+                    alt="Screenshot of profile view"
+                    fluid
+                    rounded
+                    className="me-3"
+                    style={{ width: "30%" }}
+                  />
+                  <div>
+                    <strong>Profile View:</strong> This view enables users to
+                    view and edit their personal information while also
+                    providing access to their list of favorite movies. One
+                    unexpected challenge I encountered was formatting the user's
+                    birthday. By default, the date included an unnecessarily
+                    detailed time component down to the millisecond—an
+                    impractical level of precision for a birthdate. To resolve
+                    this, I used a split function to extract only the relevant
+                    parts, displaying the date in a more user-friendly format
+                    with just the month, day, and year.
+                  </div>
+                </div>
+
+                {/* Login / Signup View */}
+                <div className="d-flex align-items-start mb-4">
+                  <div>
+                    <strong>Login / Signup View:</strong> To access movies or
+                    manage an account, users must first sign up. The signup view
+                    generates a unique user ID and an authentication token upon
+                    registration. When logging in, the system verifies the
+                    username and password against the stored credentials in the
+                    database. Additionally, the authentication token is checked
+                    to ensure it matches the one associated with the user before
+                    granting access.
+                  </div>
+                  <Image
+                    src="/images/login.png"
+                    alt="Screenshot of login view"
+                    fluid
+                    rounded
+                    className="me-3"
+                    style={{ width: "30%" }}
+                  />
+                </div>
+              </div>
+
+              {/* ===== UX & Responsive Work ====================================== */}
+              <h4>UX Highlights &amp; Mobile Accessibility</h4>
+              <ul className="text-primary mb-4">
+                <li>
+                  Card component made entirely tappable on phones, eliminating
+                  the need to hit tiny links and boosting mobile ergonomics.
+                </li>
+                <li>
+                  Bootstrap Navbar.Collapse converts the desktop nav bar into a
+                  drop-down menu for smaller screens.
+                </li>
+                <li>
+                  Global search powered by Redux filters the movie grid in
+                  real-time as you type, improving discoverability.
+                </li>
+              </ul>
+
+              {/* ===== Development Journey ====================================== */}
+              <h4>Development Journey</h4>
+              <p className="text-info mb-3">
+                I began thinking this was "just a front end for my API" but
+                quickly discovered how many moving parts a complete web app
+                entails. Breaking the work into bite-sized tasks kept me from
+                feeling overwhelmed, and frequent code reviews with my mentor
+                sped up problem-solving. The favorites feature alone required
+                multiple iterations to synchronise UI state across several
+                screens.
+              </p>
+
+              {/* ===== Challenges & Solutions =================================== */}
+              <h5>Notable Challenges & How I Solved Them</h5>
+              <ul className="text-primary mb-4">
+                <li>
+                  <em>Real-time favorites status:</em> Introduced global
+                  isFavorite state updates to keep cards and detail views in
+                  sync.
+                </li>
+                <li>
+                  <em>Birth-date formatting glitch:</em> Split the ISO string
+                  before time data to display a concise MM/DD/YYYY field.
+                </li>
+              </ul>
+
+              {/* ===== Outcome & Next Steps ===================================== */}
+              <h4>Outcome & Next Steps</h4>
+              <p className="text-primary mb-2">
+                Ultimately, I produced a final product that I am genuinely proud
+                of. While the core functionality and content are
+                well-implemented, I recognize that there is room for
+                improvement—particularly in terms of styling and design. My next
+                steps involve refining the user interface to create a more
+                polished and cohesive visual experience.
+              </p>
+            </>
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              variant="outline-primary"
-              href="/case-studies/myFlixCaseStudy.pdf"
-              target="_blank"
-            >
-              <BsDownload className="me-2" /> Download Full Case Study (PDF)
-            </Button>
             <Button
               variant="primary"
               href="https://my-flix-hannah-hogan.netlify.app/"
