@@ -26,19 +26,39 @@ function Header({ theme, toggleTheme }) {
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
-            <Nav.Link href="#about" onClick={() => setExpanded(false)}>
+            <Nav.Link
+              className="navbar-links"
+              href="#about"
+              onClick={() => setExpanded(false)}
+            >
               About
             </Nav.Link>
-            <Nav.Link href="#projects" onClick={() => setExpanded(false)}>
+            <Nav.Link
+              className="navbar-links"
+              href="#projects"
+              onClick={() => setExpanded(false)}
+            >
               Projects
             </Nav.Link>
-            <Nav.Link href="#experience" onClick={() => setExpanded(false)}>
+            <Nav.Link
+              className="navbar-links"
+              href="#experience"
+              onClick={() => setExpanded(false)}
+            >
               Experience
             </Nav.Link>
-            <Nav.Link href="#personal" onClick={() => setExpanded(false)}>
+            <Nav.Link
+              className="navbar-links"
+              href="#personal"
+              onClick={() => setExpanded(false)}
+            >
               Personal
             </Nav.Link>
-            <Nav.Link href="#contact" onClick={() => setExpanded(false)}>
+            <Nav.Link
+              className="navbar-links"
+              href="#contact"
+              onClick={() => setExpanded(false)}
+            >
               Contact
             </Nav.Link>
           </Nav>

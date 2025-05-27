@@ -19,6 +19,7 @@ section {
   --bs-info-rgb: 14, 165, 233;
   --bs-success: #059669;
   --bs-success-rgb: 5, 150, 105;
+  --bs-darkmode-button-hover: #087a16;
 }
 
 /* Dark Mode Styles */
@@ -26,6 +27,27 @@ section {
   --bs-body-bg: #121212;
   --bs-body-color: #e9ecef;
   --bs-secondary-color: #adb5bd;
+}
+
+/* Navbar */
+.navbar-links {
+  color: #414f5e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
+}
+
+[data-bs-theme="dark"] .navbar-links {
+  color: var(--bs-body-color);
+}
+
+[data-bs-theme="dark"] .navbar-links:hover {
+  color: var(--bs-primary);
+  text-decoration: underline;
 }
 
 /* Hero Section */
@@ -75,6 +97,12 @@ section {
   transition: all 0.3s ease;
 }
 
+.outline-button:hover {
+  background-color: var(--bs-primary);
+  color: white;
+  border: 2px solid var(--bs-primary);
+}
+
 .colored-button {
   background-color: var(--bs-primary);
   color: white;
@@ -92,6 +120,21 @@ section {
 
 [data-bs-theme="dark"] {
   --bs-primary: #1ac22d;
+}
+
+[data-bs-theme="dark"] .colored-button:hover {
+  background-color: var(--bs-darkmode-button-hover);
+  border: 1px solid var(--bs-darkmode-button-hover);
+}
+
+[data-bs-theme="dark"] .outline-button:hover {
+  background-color: var(--bs-darkmode-button-hover);
+  color: white;
+  border: 2px solid var(--bs-darkmode-button-hover);
+}
+
+[data-bs-theme="dark"] .colored-logo:hover {
+  color: var(--bs-darkmode-button-hover);
 }
 
 .project-card:hover {
