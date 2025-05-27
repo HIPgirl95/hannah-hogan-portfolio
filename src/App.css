@@ -31,8 +31,10 @@ section {
 
 /* Navbar */
 .navbar-links {
-  color: #414f5e;
-  font-weight: 500;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0px 8px;
   transition: color 0.3s ease;
 }
 
