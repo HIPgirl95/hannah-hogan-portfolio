@@ -8,7 +8,7 @@ function Footer() {
         <Row className="align-items-center">
           <Col md={6} className="text-center text-md-start mb-3 mb-md-0">
             <div className="fw-bold fs-4 mb-1 logo">
-              <span className="text-primary">Hannah</span>Hogan
+              <span className="colored-text">Hannah</span>Hogan
             </div>
           </Col>
           <Col md={6}>
@@ -20,7 +20,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   className="text-secondary"
                 >
-                  <BsGithub size={20} />
+                  <BsGithub size={20} className="colored-text" />
                   <span className="visually-hidden">GitHub</span>
                 </a>
               </li>
@@ -31,7 +31,7 @@ function Footer() {
                   rel="noopener noreferrer"
                   className="text-secondary"
                 >
-                  <BsLinkedin size={20} />
+                  <BsLinkedin size={20} className="colored-text" />
                   <span className="visually-hidden">LinkedIn</span>
                 </a>
               </li>
@@ -40,7 +40,7 @@ function Footer() {
                   href="mailto:hannah@internetworkflow.com"
                   className="text-secondary"
                 >
-                  <BsEnvelope size={20} />
+                  <BsEnvelope size={20} className="colored-text" />
                   <span className="visually-hidden">Email</span>
                 </a>
               </li>

@@ -35,11 +35,10 @@ function Contact() {
     <section id="contact" className="contact-section py-5 bg-light">
       <Container className="py-5">
         <div className="text-center mb-5">
-          <h2 className="display-5 fw-bold">Let's Work Together</h2>
-          <p
-            className="lead text-secondary mx-auto"
-            style={{ maxWidth: "700px" }}
-          >
+          <h2 className="display-5 fw-bold">
+            Let's Work <span className="colored-text">Together</span>
+          </h2>
+          <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
             Have a project in mind or want to discuss opportunities? I'd love to
             hear from you.
           </p>
@@ -50,7 +49,7 @@ function Contact() {
             <Card className="border-primary border-opacity-25 shadow-sm">
               <Card.Header className="bg-transparent border-0 pt-4 px-4">
                 <Card.Title className="h4">Send Me a Message</Card.Title>
-                <Card.Subtitle className="text-secondary mb-0">
+                <Card.Subtitle className="colored-text mb-0">
                   Fill out the form and I'll get back to you as soon as
                   possible.
                 </Card.Subtitle>
@@ -100,7 +99,7 @@ function Contact() {
                       required
                     />
                   </Form.Group>
-                  <Button variant="primary" type="submit" className="w-100">
+                  <Button type="submit" className="w-100 colored-button">
                     Send Message
                   </Button>
                 </Form>
@@ -117,24 +116,22 @@ function Contact() {
                 <Card.Body>
                   <div className="d-flex mb-4">
                     <div className="me-3">
-                      <BsEnvelope size={20} className="text-success" />
+                      <BsEnvelope size={20} className="colored-text" />
                     </div>
                     <div>
                       <h5 className="h6 fw-bold">Email</h5>
-                      <p className="text-secondary mb-0">
-                        hannah@internetworkflow.com
-                      </p>
+                      <p className=" mb-0">hannah@internetworkflow.com</p>
                     </div>
                   </div>
                   <div className="d-flex mb-4">
                     <div className="me-3">
-                      <BsLinkedin size={20} className="text-success" />
+                      <BsLinkedin size={20} className="colored-text" />
                     </div>
                     <div>
                       <h5 className="h6 fw-bold">LinkedIn</h5>
                       <a
                         href="https://www.linkedin.com/in/hannah-i-hogan/"
-                        className="text-secondary mb-0"
+                        className="colored-text mb-0"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -144,13 +141,13 @@ function Contact() {
                   </div>
                   <div className="d-flex">
                     <div className="me-3">
-                      <BsGithub size={20} className="text-success" />
+                      <BsGithub size={20} className="colored-text" />
                     </div>
                     <div>
                       <h5 className="h6 fw-bold">GitHub</h5>
                       <a
                         href="https://github.com/HIPgirl95"
-                        className="text-secondary mb-0"
+                        className="colored-text mb-0"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -169,15 +166,15 @@ function Contact() {
                   <p>Currently available for:</p>
                   <ul className="list-unstyled">
                     <li className="d-flex align-items-center mb-2">
-                      <BsCheckCircleFill className="text-success me-2" />
+                      <BsCheckCircleFill className="colored-text me-2" />
                       Full-time positions
                     </li>
                     <li className="d-flex align-items-center mb-2">
-                      <BsCheckCircleFill className="text-success me-2" />
+                      <BsCheckCircleFill className="colored-text me-2" />
                       Freelance projects
                     </li>
                     <li className="d-flex align-items-center">
-                      <BsCheckCircleFill className="text-success me-2" />
+                      <BsCheckCircleFill className="colored-text me-2" />
                       Remote work
                     </li>
                   </ul>
