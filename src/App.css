@@ -64,6 +64,10 @@ section {
   align-items: center;
 }
 
+.picture {
+  border: 3px solid var(--bs-primary);
+}
+
 .logo {
   font-size: xx-large;
   font-family: "Megrim", serif;

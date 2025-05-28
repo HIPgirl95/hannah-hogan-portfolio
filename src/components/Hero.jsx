@@ -72,9 +72,9 @@ function Hero() {
           <Col lg={6}>
             <div className="hero-image-container">
               <img
-                src="/images/KeilaWedding.jpg"
+                src="/images/Headshot.jpg"
                 alt="Developer portrait"
-                className="img-fluid rounded shadow-lg"
+                className="img-fluid rounded shadow-lg picture"
               />
             </div>
           </Col>

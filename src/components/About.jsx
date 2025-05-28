@@ -18,9 +18,9 @@ function About() {
         <Row className="align-items-center">
           <Col lg={6} className="mb-4 mb-lg-0">
             <img
-              src="/images/C.jpg"
+              src="/images/PotatoGenetics.jpg"
               alt="About me"
-              className="img-fluid rounded shadow-lg"
+              className="img-fluid rounded shadow-lg picture"
             />
           </Col>
           <Col lg={6}>
