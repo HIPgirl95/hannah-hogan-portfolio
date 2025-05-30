@@ -445,7 +445,7 @@ function Projects() {
                     associated with the user before granting access.
                   </div>
                   <Image
-                    src="/images/login.png"
+                    src="/images/Login.png"
                     alt="Screenshot of login view"
                     fluid
                     rounded
