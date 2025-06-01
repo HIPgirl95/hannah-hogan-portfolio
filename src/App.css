@@ -179,9 +179,10 @@ section {
   margin-top: 10px;
 }
 
-.first-casestudy-picture {
+.casestudy-picture {
   width: 100%;
   height: auto;
+  margin: 5px;
   border: 1px solid var(--bs-primary);
   border-radius: 0.5rem;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
