@@ -16,7 +16,7 @@ function Experience() {
 						className="lead mx-auto"
 						style={{ maxWidth: "700px" }}
 					>
-						My professional journey and the companies I've worked with.
+						My professional journey and the companies I've worked with
 					</p>
 				</div>
 

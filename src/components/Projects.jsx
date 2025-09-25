@@ -29,13 +29,66 @@ function Projects() {
 			<Container className="py-5">
 				<div className="text-center mb-5">
 					<h2 className="display-5 fw-bold">
-						Featured <span className="colored-text"> Projects</span>
+						<span className="colored-text">Featured </span> Project
+					</h2>
+				</div>
+
+				<Card className="h-100 border-opacity-25 project-card featured-card">
+					<Card.Body>
+						<Card.Title className="featured-title">
+							Digits and Dragons
+						</Card.Title>
+						<Card.Subtitle className="mb-3 featured-subtitle">
+							D&D themed math review game
+						</Card.Subtitle>
+						<div className="mb-3 featured-badges">
+							<Badge className="me-1">Next.js</Badge>
+							<Badge className="me-1">AI</Badge>
+							<Badge className="me-1">JavaScript</Badge>
+							<Badge className="me-1">CSS</Badge>
+						</div>{" "}
+						{/* <Card.Img
+							variant="top"
+							src="/images/Pokedex.png"
+							alt="Pokedex App"
+						/> */}
+						<Card.Text className="featured-text">
+							Digits and Dragons is a D&D themed review game. It is designed to
+							be run in a classroom by a teacher with students participating by
+							answering questions and selecting moves. Currently, all of the
+							necessary components are in place to run very simple games, but I
+							have a LOT that I want to add.
+						</Card.Text>
+					</Card.Body>
+					<Card.Footer className="bg-transparent border-0 d-flex justify-content-between">
+						<Button
+							className="outline-button"
+							size="sm"
+							href="https://github.com/HIPgirl95/digits-and-dragons"
+							target="_blank"
+						>
+							<BsGithub className="me-1" /> Code
+						</Button>
+						<Button
+							className="colored-button"
+							size="sm"
+							href="https://digits-and-dragons.vercel.app/"
+							target="_blank"
+						>
+							<BsBoxArrowUpRight className="me-1" /> Demo
+						</Button>
+					</Card.Footer>
+				</Card>
+
+				<div className="text-center mb-5">
+					<h2 className="display-5 fw-bold">
+						Boot Camp <span className="colored-text"> Projects</span>
 					</h2>
 					<p
 						className="lead mx-auto"
 						style={{ maxWidth: "700px" }}
 					>
-						A selection of my recent work and personal projects.
+						Projects I created during my time at CareerFoundry
 					</p>
 				</div>
 
