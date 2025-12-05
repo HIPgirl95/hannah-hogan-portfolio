@@ -17,6 +17,7 @@ function Projects() {
 	const [showCaseStudy, setShowCaseStudy] = useState(null);
 
 	const handleClose = () => setShowCaseStudy(null);
+	const handleShowDigitsCaseStudy = () => setShowCaseStudy("digits");
 	const handleShowReactCaseStudy = () => setShowCaseStudy("react");
 	const handleShowAngularCaseStudy = () => setShowCaseStudy("angular");
 	const handleShowMobileCaseStudy = () => setShowCaseStudy("mobile");
@@ -35,6 +36,11 @@ function Projects() {
 
 				<Card className="h-100 border-opacity-25 project-card featured-card">
 					<Card.Body>
+						<div className="position-relative">
+							<Badge className="position-absolute top-0 end-0 m-2">
+								Case Study
+							</Badge>
+						</div>
 						<Card.Title className="featured-title">
 							Digits and Dragons
 						</Card.Title>
@@ -76,6 +82,13 @@ function Projects() {
 							target="_blank"
 						>
 							<BsBoxArrowUpRight className="me-1" /> Demo
+						</Button>
+						<Button
+							className="outline-button"
+							size="sm"
+							onClick={handleShowDigitsCaseStudy}
+						>
+							<BsFileText className="me-1" /> Case Study
 						</Button>
 					</Card.Footer>
 				</Card>
@@ -655,6 +668,77 @@ function Projects() {
 								target="_blank"
 							>
 								<BsBoxArrowUpRight className="me-2" /> View Live Project
+							</Button>
+						</Modal.Footer>
+					</Modal>
+				)}
+
+				{/* Digits and Dragons case study */}
+				{showCaseStudy === "digits" && (
+					<Modal
+						show={showCaseStudy}
+						onHide={handleClose}
+						size="lg"
+					>
+						<Modal.Header closeButton>
+							<Modal.Title>Digits & Dragons Case Study</Modal.Title>
+						</Modal.Header>
+						<Modal.Body>
+							<>
+								<h3 className="colored-text">Project Overview</h3>
+								<p className="mb-4">
+									Digits & Dragons is a D&amp;D themed math review game designed
+									for classroom use. A teacher can run rounds while students
+									answer questions and choose moves. The project focuses on
+									engaging UX, turn-based interactions, and clear feedback for
+									learners.
+								</p>
+								<Image
+									src="/images/DigitsAndDragons.png"
+									alt="Digits and Dragons"
+									fluid
+									rounded
+									className="mb-4 casestudy-picture"
+								/>
+								<h4>Tools &amp; Tech</h4>
+								<div className="mb-3">
+									{[
+										{ label: "Next.js" },
+										{ label: "AI" },
+										{ label: "JavaScript" },
+										{ label: "CSS" },
+									].map(({ bg, label }) => (
+										<Badge
+											key={label}
+											bg={bg}
+											className="me-1 p-2"
+										>
+											{label}
+										</Badge>
+									))}
+								</div>
+								<h4 className="colored-text">Key Features</h4>
+								<ul className="mb-4">
+									<li>Teacher-controlled rounds with student responses</li>
+									<li>Turn-based move selection and outcome resolution</li>
+									<li>Question generation and adaptive difficulty</li>
+									<li>Simple scoreboard and session persistence</li>
+								</ul>
+								<h4 className="colored-text">Next Steps</h4>
+								<ul>
+									<li>Improve AI opponent behavior and difficulty scaling</li>
+									<li>Add multiplayer networking and session management</li>
+									<li>Refine UI and accessibility for classroom settings</li>
+								</ul>
+							</>
+						</Modal.Body>
+						<Modal.Footer>
+							<Button
+								className="colored-button"
+								href="https://digits-and-dragons.vercel.app/"
+								target="_blank"
+							>
+								<BsBoxArrowUpRight className="me-2" /> View Project
 							</Button>
 						</Modal.Footer>
 					</Modal>
