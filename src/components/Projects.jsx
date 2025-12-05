@@ -53,11 +53,11 @@ function Projects() {
 							<Badge className="me-1">JavaScript</Badge>
 							<Badge className="me-1">CSS</Badge>
 						</div>{" "}
-						{/* <Card.Img
+						<Card.Img
 							variant="top"
-							src="/images/Pokedex.png"
-							alt="Pokedex App"
-						/> */}
+							src="/images/DigitsAndDragons.png"
+							alt="Digits and Dragons"
+						/>
 						<Card.Text className="featured-text">
 							Digits and Dragons is a D&D themed review game. It is designed to
 							be run in a classroom by a teacher with students participating by
@@ -700,6 +700,15 @@ function Projects() {
 									rounded
 									className="mb-4 casestudy-picture"
 								/>
+								{/* Team & Roles */}
+								<h5 className="colored-text">Team &amp; Mentorship</h5>
+								<ul className=" mb-4 ps-3">
+									<li>Lead Developer – Hannah Hogan</li>
+									<li>
+										Mentors - Dawne Pamplin (Content) & Jason Pamplin (Database
+										Structure)
+									</li>
+								</ul>
 								<h4>Tools &amp; Tech</h4>
 								<div className="mb-3">
 									{[
@@ -721,13 +730,109 @@ function Projects() {
 								<ul className="mb-4">
 									<li>Teacher-controlled rounds with student responses</li>
 									<li>Turn-based move selection and outcome resolution</li>
-									<li>Question generation and adaptive difficulty</li>
-									<li>Simple scoreboard and session persistence</li>
+									<li>In-depth breakdown of topics for review</li>
+								</ul>
+								{/* Architecture / Key Views */}
+								<h4>Application Architecture &amp; Key Views</h4>
+								<div className="mb-4">
+									<div className="d-flex align-items-start mb-4">
+										<Image
+											src="/images/SubjectSelection.png"
+											alt="Subject Selection"
+											fluid
+											rounded
+											className="me-3 casestudy-picture"
+											style={{ width: "30%" }}
+										/>
+										<div>
+											<strong className="colored-text">
+												Subject Selection:{" "}
+											</strong>
+											Right now, this looks simple, but eventually teachers will
+											be able to select either broad topics (like "Systems of
+											Equations") or specific subtopics (like "Solving by
+											Substitution") to tailor the questions to their lesson
+											plans.
+										</div>
+									</div>
+									<div className="d-flex align-items-start mb-4">
+										<div>
+											<strong className="colored-text">
+												Character Selection:{" "}
+											</strong>{" "}
+											Students get to choose a character which has unique
+											abilities and helps them feel more invested in the game.
+											If a class has more than 8 students, it's recommended to
+											have some students pair up or work in teams.
+										</div>
+										<Image
+											src="/images/CharacterSelection.png"
+											alt="Character selection"
+											fluid
+											rounded
+											className="me-3 casestudy-picture"
+											style={{ width: "30%" }}
+										/>
+									</div>
+								</div>
+								<h4 className="colored-text">
+									UX Highlights &amp; Accessibility
+								</h4>
+								<ul className="mb-4">
+									<li>Large, tappable controls for classroom device use</li>
+									<li>Clear color-contrast and text sizing for readability</li>
+									<li>Immediate feedback on answers to reinforce learning</li>
+								</ul>
+								<h4 className="colored-text">Development Journey</h4>
+								<p className="mb-3">
+									I started by running paper and pen games in my own classroom
+									to observe how students interacted with the system. This
+									helped me identify pain points and areas for improvement. From
+									there, I built a basic digital prototype focusing on core
+									mechanics before layering in UX enhancements. <br /> An
+									additional goal of this project is to practice using AI to
+									expedite content creation. While AI has helped speed up the
+									process, I still review and refine all content to ensure
+									accuracy and efficiency.
+								</p>
+								<h5 className="colored-text">
+									Notable Challenges &amp; Solutions
+								</h5>
+								<ul className="mb-4">
+									<li>
+										<strong>Combat Tracker:</strong> Designed a combat tracker
+										so students could see whose turn it is, who's next, and
+										current HP. This keeps the game flowing smoothly. It is
+										designed to show 5 characters at a time, so when I first
+										only played with one character, it repeated that same
+										character's card multiple times. I had to add in logic for
+										different numbers of players to ensure each character only
+										appears once.
+									</li>
+									<li>
+										<strong>Topic Breakdown:</strong> Created a database for
+										questions with multiple layers of information to enable
+										teachers to either select broad topics or choose from
+										individual subtopics. This involved many iterations,
+										communication with my dad on database structure, and
+										communication with my mom on how to break down topics.
+									</li>
+									<li>
+										<strong>Healing Abilities: </strong> This is actually a
+										CURRENT challenge that I am still trying to figure out. As
+										it is, any healing done by the players will heal the dragon,
+										not their fellow players. This is, obviously, not the
+										intended behavior. I am currently brainstorming solutions to
+										this problem.
+									</li>
 								</ul>
 								<h4 className="colored-text">Next Steps</h4>
 								<ul>
-									<li>Improve AI opponent behavior and difficulty scaling</li>
-									<li>Add multiplayer networking and session management</li>
+									<li>Fix healing abilities</li>
+									<li>Continue work on database</li>
+									<li>Integrate database into project</li>
+									<li>Commission art for characters</li>
+									<li>Collaborate with a UX designer</li>
 									<li>Refine UI and accessibility for classroom settings</li>
 								</ul>
 							</>
