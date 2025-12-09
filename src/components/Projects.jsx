@@ -42,7 +42,7 @@ function Projects() {
 							</Badge>
 						</div>
 						<Card.Title className="featured-title">
-							Digits and DRAGONS
+							Digits and Dragons
 						</Card.Title>
 						<Card.Subtitle className="mb-3 featured-subtitle">
 							D&D themed math review game
